@@ -1,4 +1,4 @@
-# i-wish-App
+# I-Wish-App
 An application developed using java
 
 
