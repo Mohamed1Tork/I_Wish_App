@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hboxfriendrequest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.MininotificationController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Pane fx:id="panefriendrequesth" prefHeight="13.0" prefWidth="96.0" />
+            <ImageView fx:id="imagfriendrequesth" fitHeight="122.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/notification.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Pane fx:id="panefriendrequest2h" prefHeight="117.0" prefWidth="0.0" />
+      <VBox fx:id="vbox1friendrequest" prefHeight="117.0" prefWidth="667.0">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="448.0" />
+            <Label fx:id="notilabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="619.0" textFill="#9c1e53">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="24.0" prefWidth="448.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

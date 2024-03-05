@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorcontributers" prefHeight="238.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contributers.scene.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tableviewcontributers" prefHeight="238.0" prefWidth="607.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="coldatecontributers" prefWidth="85.0" style="-fx-background-color: #9C1E53;" text="Date" />
+            <TableColumn fx:id="colnamecontributers" prefWidth="160.0" style="-fx-background-color: #9C1E53;" text="Name" />
+            <TableColumn fx:id="colemailcontributers" prefWidth="220.0" style="-fx-background-color: #9C1E53;" styleClass="column-header-background" text="Email" />
+            <TableColumn fx:id="coltotalconcontributers" prefWidth="156.0" style="-fx-background-color: #9C1E53;" styleClass="column-header-background" text="Total Contribution" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

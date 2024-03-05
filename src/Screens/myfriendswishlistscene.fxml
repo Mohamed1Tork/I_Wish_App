@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="container" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.MyfriendswishlistsceneController">
+   <children>
+      <Pane fx:id="con" prefHeight="102.0" prefWidth="17.0" style="-fx-background-color: #9C1E53;">
+         <children>
+            <Text fx:id="itemIdLabel" layoutX="27.0" layoutY="94.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </Pane>
+      <VBox prefHeight="102.0" prefWidth="240.0" style="-fx-background-color: #9C1E53;">
+         <children>
+            <Pane prefHeight="9.0" prefWidth="197.0" style="-fx-background-color: #9C1E53;" />
+            <HBox prefHeight="24.0" prefWidth="207.0" style="-fx-background-color: #9C1E53;">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Product :" wrappingWidth="69.6708984375">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="ProdNameLabel" alignment="TOP_LEFT" prefHeight="75.0" prefWidth="133.0" style="-fx-background-color: #9C1E53;" text="   Prod name">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#f1c5c5" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="207.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" wrappingWidth="50.6708984375">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="PriceLabel" alignment="TOP_LEFT" prefHeight="75.0" prefWidth="133.0" style="-fx-background-color: #9C1E53;" text="   Price">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#f1c5c5" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="207.0">
+               <children>
+                  <Label ellipsisString=".." prefHeight="27.0" prefWidth="138.0" text="Total Contribution :  " textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CurrContribution" prefHeight="24.0" prefWidth="67.0" style="-fx-background-color: #9C1E53;" text="   $$$$">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#f1c5c5" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="102.0" prefWidth="175.0">
+         <children>
+            <Pane prefHeight="102.0" prefWidth="144.0" style="-fx-background-color: #9C1E53;">
+               <children>
+                  <TextField fx:id="amountLabel" alignment="CENTER" layoutX="4.0" layoutY="8.0" prefHeight="35.0" prefWidth="167.0" promptText="Enter Amount" style="-fx-border-color: #2B3467; -fx-border-radius: 20,20,20,20; -fx-background-radius: 20,20,20,20;" styleClass="label" stylesheets="@last/I_Wish_Client/src/Screens/m.css">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#e3e3e3a4" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="38.0" layoutY="51.0" mnemonicParsing="false" onAction="#contribute" prefHeight="26.0" prefWidth="100.0" style="-fx-border-radius: 20,20,20,20;" styleClass="clear-btn" text="Contribute">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@last/I_Wish_Client/src/Screens/m.css" />
+                        <URL value="@m.css" />
+                     </stylesheets></Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

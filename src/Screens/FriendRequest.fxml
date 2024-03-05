@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="hboxfriendrequest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.FriendRequestController">
+   <children>
+      <Pane fx:id="panefriendrequesth" prefHeight="102.0" prefWidth="12.0" />
+      <ImageView fx:id="imagfriendrequesth" fitHeight="87.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/friends.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="panefriendrequest2h" prefHeight="102.0" prefWidth="14.0" />
+      <VBox fx:id="vbox1friendrequest" prefHeight="102.0" prefWidth="251.0">
+         <children>
+            <Pane fx:id="panefriendrequestvbox1" prefHeight="19.0" prefWidth="251.0" />
+            <HBox fx:id="nameFieldfriendrequest" prefHeight="31.0" prefWidth="251.0">
+               <children>
+                  <Text fx:id="textnamefriend" fill="#722e50" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="50.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="labelfriendname" text="Friend Name" />
+               </children>
+            </HBox>
+            <HBox fx:id="hbox2invbox1friendequest" prefHeight="32.0" prefWidth="251.0">
+               <children>
+                  <Text fx:id="textemailfriendrquest" fill="#722e50" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="50.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="labelemail" prefHeight="27.0" prefWidth="192.0" text="\@@@@" />
+               </children>
+            </HBox>
+            <Pane fx:id="panehbox2vbox1friendrequest" prefHeight="2.0" prefWidth="251.0" style="-fx-background-color: #9C1E53;" />
+         </children>
+      </VBox>
+      <VBox fx:id="vbox2friendrequest" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane fx:id="panevbox2friendrequest" prefHeight="55.0" prefWidth="200.0" />
+            <HBox fx:id="hboxvbox2friendrequest" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="butaccceptfriendrequest" mnemonicParsing="false" onAction="#acceptRequest" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #9C1E53;" styleClass="add-btn" stylesheets="@m.css" text="Accept" />
+                  <Pane fx:id="pane2vbox2friendrequest" prefHeight="74.0" prefWidth="10.0">
+                     <children>
+                        <Button fx:id="butdeclinefriendrequest" layoutX="9.0" mnemonicParsing="false" onAction="#declineRequest" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #9C1E53;" styleClass="update-btn" stylesheets="@m.css" text="Decline" />
+                     </children></Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

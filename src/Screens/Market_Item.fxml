@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="144.0" prefWidth="255.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.Market_ItemController">
+   <children>
+      <HBox>
+         <children>
+            <VBox fx:id="vboxmarkitem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="144.0" prefWidth="262.0" style="-fx-background-color: #9C1E53;">
+               <children>
+                  <Pane fx:id="paneabvpromaekitem" prefHeight="10.0" prefWidth="237.0" />
+                  <HBox fx:id="hboxpromarketitem" prefHeight="27.0" prefWidth="230.0" style="-fx-background-color: #9C1E53;">
+                     <children>
+                        <Pane fx:id="panepromarketitem" prefHeight="27.0" prefWidth="17.0" />
+                        <Text fx:id="textproductmarketitem" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Product :" wrappingWidth="77.6708984375">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="ProdNameLabel" alignment="TOP_LEFT" prefHeight="27.0" prefWidth="150.0" text="    product name">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#d38383" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbox2catmarkitem" prefHeight="29.0" prefWidth="255.0" style="-fx-background-color: #9C1E53;">
+                     <children>
+                        <Pane fx:id="panecatmarkitem" prefHeight="27.0" prefWidth="17.0" />
+                        <Text fx:id="textcatmarkitem" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :" wrappingWidth="75.6708984375">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="categorylabel" alignment="TOP_LEFT" prefHeight="29.0" prefWidth="144.0" text="    category">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#d38383" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbox3markitem" prefHeight="29.0" prefWidth="224.0" style="-fx-background-color: #9C1E53;">
+                     <children>
+                        <Pane fx:id="panepricemarkitem" prefHeight="27.0" prefWidth="17.0" />
+                        <Text fx:id="textpricemarkitem" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" wrappingWidth="72.6708984375">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="PriceLabel" alignment="TOP_LEFT" prefHeight="24.0" prefWidth="141.0" text="        price">
+                           <font>
+                              <Font name="Verdana Bold" size="15.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#d38383" />
+                                    <Stop color="#fff3f3" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane fx:id="panemywishmarkitem" prefHeight="35.0" prefWidth="237.0">
+                     <children>
+                        <Button fx:id="myWishBtn" layoutX="84.0" layoutY="3.0" mnemonicParsing="false" onAction="#wishItem" style="-fx-background-color: white;" text="My Wish">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Text fx:id="itemID" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>
