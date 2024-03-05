@@ -1,0 +1,88 @@
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right, #2B3467, #EB455F);
+    -fx-background-insets: 0 0 0 0;
+    -f-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+.add-btn{
+    -fx-background-color:#3357a4;
+    -fx-background-radius:20px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    
+    -fx-font-family: "Roboto";
+    -fx-cursor:hand;
+	-fx-font-weight: bold;
+}
+.add-btn:hover{
+    -fx-background-color:#3FC1C9;
+}
+
+.update-btn{
+    -fx-background-color:#EB455F;
+    -fx-background-radius:20px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+	-fx-font-weight: bold;
+}
+.update-btn:hover{
+    -fx-background-color:#309a65;
+}
+
+.clear-btn{
+    -fx-background-color:#FEAE46;
+    -fx-background-radius:8px;
+    -fx-text-fill:#364F6B;
+    -fx-font-size:12px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+	-fx-font-weight: bold;
+	-fx-background-radius:20px;
+}
+.clear-btn:hover{
+    -fx-background-color:#9d3485;
+}
+
+.main-btn{
+   
+	-fx-background-color:transparent;
+    -fx-text-fill:#364F6B;
+    -fx-font-size:14px;
+    -fx-font-family:"MontserratAlternates-ExtraBold";
+    -fx-cursor:hand;
+	-fx-font-weight:bold;
+}
+
+
+.mouse-moved:hover{
+	-fx-background-color:#E4E4E4;
+}
+.mouse-clicked:active{
+	
+	-fx-background-color:#E4E4E4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
