@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1118.0" style="-fx-background-color: #9C1E53;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.ProfilepaneController">
+   <children>
+      <Pane fx:id="profilepane" layoutX="57.0" layoutY="486.0" prefHeight="195.0" prefWidth="483.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20,20,20,20; -fx-border-color: #364F6B; -fx-border-radius: 20,20,20,20;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#dddddd" />
+         </effect>
+         <children>
+            <Label fx:id="ProfilenameLabel" layoutX="11.0" layoutY="14.0" text="Fname" textFill="#941b4f">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="mobilelabel" layoutX="112.0" layoutY="71.0" text="phone_number" textFill="#941b4f">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Pane fx:id="Imagepane" layoutX="312.0" layoutY="14.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-radius: 20,20,20,20; -fx-background-radius: 20,20,20,20;">
+               <children>
+                  <ImageView fx:id="perimg" fitHeight="151.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/user.png" />
+                     </image></ImageView>
+                  <Circle fx:id="profcir" fill="#941b5e" layoutX="78.0" layoutY="72.0" opacity="0.0" radius="62.0" stroke="WHITE" strokeType="INSIDE">
+                     <effect>
+                        <DropShadow color="#b5b5b5" spread="0.12" />
+                     </effect>
+                  </Circle>
+               </children>
+            </Pane>
+            <Text fx:id="textbalanceprofilepane" fill="#941b5ea6" layoutX="14.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="balanceLabel" fill="#5e5e5e" layoutX="30.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" wrappingWidth="130.0000009611249">
+               <font>
+                  <Font name="Roboto" size="28.0" />
+               </font></Text>
+            <Text fx:id="text$profilepane" fill="#000000c6" layoutX="14.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="buttrechargeprofilepane" layoutX="220.0" layoutY="134.0" mnemonicParsing="false" onAction="#rechargePanel" style="-fx-background-color: #941b5e;" styleClass="add-btn" text="Recharge" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <Label layoutX="14.0" layoutY="72.0" text="Phone : ">
+               <font>
+                  <Font name="Verdana Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="friendspane" layoutX="595.0" layoutY="12.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 5,5,5,5;">
+         <children>
+            <Text fx:id="textfriendsprofilepane" layoutX="11.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friends">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="mywishlistpane" layoutX="68.0" layoutY="12.0" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 5,5,5,5;">
+         <children>
+            <Text fx:id="mywishtextprofilepane" layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Wish List">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="wishlisttable" layoutX="68.0" layoutY="55.0" prefHeight="356.0" prefWidth="483.0" stylesheets="@m.css">
+        <columns>
+          <TableColumn fx:id="productwfield" prefWidth="188.0" text="Product" />
+            <TableColumn fx:id="pricewfield" prefWidth="158.0" text="Price" />
+            <TableColumn fx:id="tcontributionswfield" prefWidth="136.0" text="Total Contributions" />
+        </columns>
+      </TableView>
+      <TableView fx:id="friendstable" layoutX="595.0" layoutY="55.0" prefHeight="356.0" prefWidth="498.0" stylesheets="@m.css">
+        <columns>
+          <TableColumn fx:id="firstnamefield" prefWidth="169.0" text="First_name" />
+          <TableColumn fx:id="lastnamefield" prefWidth="165.0" text="Last_name" />
+            <TableColumn fx:id="emailfield" prefWidth="165.0" text="Email" />
+        </columns>
+      </TableView>
+      <Pane fx:id="myitmspane" layoutX="595.0" layoutY="442.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 5,5,5,5;">
+         <children>
+            <Text fx:id="myitemstextprofilepane" layoutX="11.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My items">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="profilepane" layoutX="57.0" layoutY="442.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: white; -fx-background-radius: 5,5,5,5;">
+         <children>
+            <Text fx:id="profiletextprofilepane" layoutX="11.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="itemstable" layoutX="595.0" layoutY="484.0" prefHeight="200.0" prefWidth="506.0" stylesheets="@m.css">
+        <columns>
+            <TableColumn fx:id="Productidifield" prefWidth="83.0" text="Product Id" />
+          <TableColumn fx:id="productifield" prefWidth="312.0" text="Product" />
+            <TableColumn fx:id="priceifield" minWidth="0.0" prefWidth="110.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchoritemspane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.Item_PaneController">
+   <children>
+      <ScrollPane fx:id="scrollitemspane" layoutX="179.0" layoutY="59.0" prefHeight="546.0" prefWidth="266.0">
+         <content>
+            <VBox fx:id="vboxscrollitemspane" layoutX="30.0" prefHeight="545.0" prefWidth="264.0">
+               <children>
+                  <HBox layoutX="30.0" prefHeight="2.0" prefWidth="242.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label fx:id="labelselectproductitemspane" layoutX="179.0" layoutY="14.0" prefHeight="30.0" prefWidth="219.0" text="Add to Your WishList" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="425.0" fitWidth="391.0" layoutX="593.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/receipt.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
