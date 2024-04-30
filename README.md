@@ -1,6 +1,5 @@
 # I-Wish-App
-An application developed using java
-
+## An application developed using java
 
 
 Our app  is designed to simplify the process of creating wish lists and facilitating group contributions.
